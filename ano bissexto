@@ -1,0 +1,18 @@
+# include <stdio.h>
+int main(){
+char nome[100];
+int data;
+ 
+("Digite seu nome: ");
+scanf("%s", nome);
+
+printf("Digite o ano do seu nascimento: ");
+
+scanf("%d", &data);
+ 
+if(data % 4 == 0) printf("%s, %d ano bissexto", nome, data);
+
+else printf("%s, %d nao e bissexto",nome,data);
+ 
+return 0;
+}
