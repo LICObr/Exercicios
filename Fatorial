@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+   int num, i, result = 1;
+   
+  do{  
+    printf("Digite um numero nao negativo: ");
+    scanf("%d",&num);
+    
+if(num <= 0){
+    printf("O numero deve ser nao negativo\n");
+}
+}while(num <= 0);
+
+for(i = 1; i <= num; i++){
+result *= i;
+}
+
+printf("O fatorial eh %d\n", result);
+ 
+
+
+
+
+    return 0;
+}
